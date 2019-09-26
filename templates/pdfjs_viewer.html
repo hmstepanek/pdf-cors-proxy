@@ -58,7 +58,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
           appType: 'via',
       
           {% if not (h_request_config == nil) then %}
-          requestConfigFromFrame: '{{ h_request_config }}',
+          requestConfigFromFrame: '{*h_request_config*}',
           {% end %}
       
           {% if not (h_open_sidebar == nil) then %}
